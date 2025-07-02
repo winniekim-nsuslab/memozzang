@@ -38,3 +38,7 @@ def register_view(request):
     else:
         form = CustomUserCreationForm()
     return render(request, 'users/register.html', {'form': form})
+
+def memo_list_view(request):
+
+    return render(request, 'memos/memo_list.html')
